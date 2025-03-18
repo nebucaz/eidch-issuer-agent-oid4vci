@@ -21,7 +21,8 @@ logging:
 
 application:
   issuer-id: "did:example:123456789"
-  external-url: "http://localhost:8080"
+  template-replacement: # Hash Map of Values replaced in the templating
+    external-url: "http://localhost:8080"
   token-ttl: 600
   #  openid-file: "file:///data/example_openid.json"
   openid-file: "classpath:example_openid.json"
@@ -39,5 +40,4 @@ application:
   key:
     sdjwt:
       private-key: "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIAs0WyAxFdOvqYML8t2Zy0otWO93eXnR5X1fa09hI6mDoAoGCCqGSM49\nAwEHoUQDQgAEJCe2BrwmpvMHw/J+hx6dGKCtRtv+X5fk8NNCXSSHr9owdxOyIaz9\nplC4UblhP2d7rIi52L4LKqEhp6cliJ5xuw==\n-----END EC PRIVATE KEY-----\n"
-  template-replacement:
-    external-url: "http://localhost:8080"
+
