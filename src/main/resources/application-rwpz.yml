@@ -24,7 +24,7 @@ logging:
     org.springframework.web: DEBUG
 
 application:
-  issuer-id: "did:tdw:QmUvM67g3gh15bX4jyQwF6LL2961GR2b4rrTfowxe51R3s:base-registry.home.rwpz.net:api:vi:did:8bbe89d1-3a29-465a-9ba4-b900924039e0"
+  issuer-id: "did:tdw:QmRAgGovbs8n3FuUHSt1E88NSmoQ3GYNafuht1wJwfYFLu:base-registry.home.rwpz.net:api:vi:did:f91377d8-90a6-42a6-a239-6a2e3aaa1319"
   template-replacement: # Hash Map of Values replaced in the templating
     external-url: "https://issuer-oid4vci.home.rwpz.net"
   token-ttl: 600
@@ -33,4 +33,4 @@ application:
   metadata-file: "classpath:issuer_metadata.json"
   key:
     sdjwt:
-      private-key: "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEINx9F+kdKHiFjAjVQadZes3OhQprhZk5B5DFxdRyimGMoAoGCCqGSM49\nAwEHoUQDQgAEuytbM8Rpjp50ZLqfvHiYTkj6fn2d+7HQiUPWCQ+Al/fuZbCN312B\nEEdJxwZBWbjbQS+sCYQopYSds9lDPZK8fA==\n-----END EC PRIVATE KEY-----\n"
+      private-key: "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIDWe1M9W8l6454kxiGIdKiRXaJI7tecS9vlgGmgdlPWoAoGCCqGSM49\nAwEHoUQDQgAE/rY0CKKOxHprLXUDKKimBbK1cRXYrLXAs5l1sTMcmu9M3+TPywhm\n3mVrk99WO3sejkmsGBNvoMtX4lZK48tdYw==\n-----END EC PRIVATE KEY-----\n"
