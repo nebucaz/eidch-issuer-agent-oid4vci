@@ -3,17 +3,17 @@
 # SPDX-License-Identifier: MIT
 
 # Docker Compose for running a DB locally
-services:
-  postgres:
-    image: postgres
-    environment:
-      POSTGRES_USER: "oid4vci_user"
-      POSTGRES_PASSWORD: "secret"
-      POSTGRES_DB: "issuer_db"
-    ports:
-      - '5434:5432'
-    volumes:
-      - db_data:/var/lib/postgresql/data
-
-volumes:
-  db_data:
+#services:
+#  postgres:
+#    image: postgres
+#    environment:
+#      POSTGRES_USER: "oid4vci_user"
+#      POSTGRES_PASSWORD: "secret"
+#      POSTGRES_DB: "issuer_db"
+#    ports:
+#      - '5434:5432'
+#    volumes:
+#      - db_data:/var/lib/postgresql/data
+#
+#volumes:
+#  db_data:

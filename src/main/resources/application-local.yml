@@ -22,7 +22,7 @@ logging:
 application:
   issuer-id: "did:example:123456789"
   template-replacement: # Hash Map of Values replaced in the templating
-    external-url: "http://localhost:8080"
+    external-url: "http---://localhost:8080"
   token-ttl: 600
   #  openid-file: "file:///data/example_openid.json"
   openid-file: "classpath:example_openid.json"

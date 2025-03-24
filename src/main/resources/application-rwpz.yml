@@ -4,19 +4,26 @@
 server:
   port: 8081
   address: 0.0.0.0
+  forward-headers-strategy: framework
+
+springdoc:
+  api-docs:
+    server:
+      url: "https://issuer-oid4vci.home.rwpz.net"
 
 spring:
   docker:
     compose:
-      enabled: true
+      enabled: false
   datasource:
     url: "jdbc:postgresql://localhost:5183/issuer_db"
-    username: "oid4vci_user"
+    username: "issuer_oid4vci_user"
     password: "secret"
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: create # when starting locally we connect to the db from compose.yml and generate the schema from hibernate
+      #ddl-auto: create # when starting locally we connect to the db from compose.yml and generate the schema from hibernate
+      ddl-auto: validate  # prevent altering tables
 
 logging:
   level:
@@ -24,7 +31,7 @@ logging:
     org.springframework.web: DEBUG
 
 application:
-  issuer-id: "did:tdw:QmRAgGovbs8n3FuUHSt1E88NSmoQ3GYNafuht1wJwfYFLu:base-registry.home.rwpz.net:api:vi:did:f91377d8-90a6-42a6-a239-6a2e3aaa1319"
+  issuer-id: "did:tdw:QmVrRb4d1cE1TKmYijhWMNrtp57YvPBr2TSNYNcRLFLzKm:base-registry.home.rwpz.net:api:v1:did:6576ce1c-75bc-4d56-acca-ec3ffa7abd96"
   template-replacement: # Hash Map of Values replaced in the templating
     external-url: "https://issuer-oid4vci.home.rwpz.net"
   token-ttl: 600
@@ -33,4 +40,4 @@ application:
   metadata-file: "classpath:issuer_metadata.json"
   key:
     sdjwt:
-      private-key: "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIDWe1M9W8l6454kxiGIdKiRXaJI7tecS9vlgGmgdlPWoAoGCCqGSM49\nAwEHoUQDQgAE/rY0CKKOxHprLXUDKKimBbK1cRXYrLXAs5l1sTMcmu9M3+TPywhm\n3mVrk99WO3sejkmsGBNvoMtX4lZK48tdYw==\n-----END EC PRIVATE KEY-----\n"
+      private-key: "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIAdDBy8cpDJvMq1jVfZo8Q9bBoZ9hZOhAD9MO2D3H7iAoAoGCCqGSM49\nAwEHoUQDQgAEhrMnAcQfayY5/lZYBqvtCLiAFVuEXtlDeMyQQRBMCpWunypG0zq3\nPq528uiDyTxQ4drbMirkGw8zt80JzdW7Wg==\n-----END EC PRIVATE KEY-----\n"
