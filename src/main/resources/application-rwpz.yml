@@ -40,4 +40,6 @@ application:
   metadata-file: "classpath:issuer_metadata.json"
   key:
     sdjwt:
-      private-key: "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIAdDBy8cpDJvMq1jVfZo8Q9bBoZ9hZOhAD9MO2D3H7iAoAoGCCqGSM49\nAwEHoUQDQgAEhrMnAcQfayY5/lZYBqvtCLiAFVuEXtlDeMyQQRBMCpWunypG0zq3\nPq528uiDyTxQ4drbMirkGw8zt80JzdW7Wg==\n-----END EC PRIVATE KEY-----\n"
+      verification-method: "did:tdw:QmVrRb4d1cE1TKmYijhWMNrtp57YvPBr2TSNYNcRLFLzKm:base-registry.home.rwpz.net:api:v1:did:6576ce1c-75bc-4d56-acca-ec3ffa7abd96#assert-key-01"
+      private-key: "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJwQXE/MaJe9Zat8p6qz0IdTF4fSqloV3xJgR3h054ZXoAoGCCqGSM49\nAwEHoUQDQgAEZ88dNvjoX+d7nmwlFwvFWb/mt/ogBoatD0ZvTS847Q7AMCl7EofW\nIdlwccxSI8RphBs25g28kcNfb5RhUZLHKw==\n-----END EC PRIVATE KEY-----\n"
+      #private-key: "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIAdDBy8cpDJvMq1jVfZo8Q9bBoZ9hZOhAD9MO2D3H7iAoAoGCCqGSM49\nAwEHoUQDQgAEhrMnAcQfayY5/lZYBqvtCLiAFVuEXtlDeMyQQRBMCpWunypG0zq3\nPq528uiDyTxQ4drbMirkGw8zt80JzdW7Wg==\n-----END EC PRIVATE KEY-----\n"
